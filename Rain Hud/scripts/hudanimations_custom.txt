@@ -1,0 +1,300 @@
+//===========================================
+
+//Health Bonus Pulse
+event HudHealthBonusPulse
+{
+	Animate	PlayerStatusHealthBonusImage	Alpha		"255"		Linear 0.0 0.2
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.2 0.4
+	
+	Animate CrosshairBonus				tall		40			Linear 0.0 0.075
+//	Animate CrosshairBonus				tall		0			Linear 0.125 0.075
+	
+	Animate PlayerStatusHealthValue 		 FgColor "Health Buff" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueSpectator FgColor "Spec Health Buff" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueFreezePanel FgColor "Spec Health Buff" Accel 0.0 0.0
+
+	RunEvent HudHealthBonusPulseLoop	0.4
+}
+
+// call to loop HudHealthBonusPulse
+event HudHealthBonusPulseLoop
+{
+	RunEvent HudHealthBonusPulse 0.0
+}
+
+event HudHealthBonusPulseStop
+{
+	StopEvent HudHealthBonusPulse 0.0
+	StopEvent HudHealthBonusPulseLoop 0.0
+	
+	Animate CrosshairBonus tall 0 Linear 0.0 0.00001
+	
+	Animate PlayerStatusHealthValue FgColor "Health Normal" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueSpectator FgColor "Spec Health Normal" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueFreezePanel FgColor "Spec Health Normal" Accel 0.0 0.0
+}
+
+//===========================================
+
+//Health Dying Pulse
+event HudHealthDyingPulse
+{
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"255"		Linear 0.0 0.075
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.125 0.075
+	
+	Animate CrosshairDying				tall		40			Linear 0.0 0.075
+	//Animate CrosshairDying				tall		0			Linear 0.125 0.075
+	
+	Animate PlayerStatusHealthValue 		 FgColor "Health Hurt" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueSpectator FgColor "Spec Health Hurt" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueFreezePanel FgColor "Spec Health Hurt" Accel 0.0 0.0
+	
+	RunEvent HudHealthDyingPulseLoop	0.3
+}
+
+// call to loop HudHealthDyingPulse
+event HudHealthDyingPulseLoop
+{
+	RunEvent HudHealthDyingPulse 0.0
+}
+
+event HudHealthDyingPulseStop
+{
+	StopEvent HudHealthDyingPulse 0.0
+	StopEvent HudHealthDyingPulseLoop 0.0
+	
+	Animate CrosshairDying tall 0 Linear 0.0 0.00001
+	
+	Animate PlayerStatusHealthValue FgColor "Health Normal" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueSpectator FgColor "Spec Health Normal" Accel 0.0 0.0
+	Animate PlayerStatusHealthValueFreezePanel FgColor "Spec Health Normal" Accel 0.0 0.0
+}
+
+//===========================================
+
+event HudLowAmmoPulse
+{
+	Animate	HudWeaponLowAmmoImage		Alpha	"255"					Linear 0.0 		0.075
+	Animate	HudWeaponLowAmmoImage		Alpha	"0"						Linear 0.125 	0.075
+	
+	Animate AmmoInClip FgColor "244 244 230 255" Linear 0.0 0.075
+	Animate AmmoInClip FgColor "244 244 230 255" Linear 0.125 0.075
+
+	Animate AmmoInReserve FgColor "255 155 155 255" Linear 0.0 0.075
+	Animate AmmoInReserve FgColor "232 72 73 255" Linear 0.125 0.075
+
+	Animate AmmoNoClip FgColor "244 244 230 255" Linear 0.0 0.075
+	Animate AmmoNoClip FgColor "244 244 230 255" Linear 0.125 0.075
+	
+	RunEvent HudLowAmmoPulseLoop	0.25
+}
+
+// call to loop HudLowAmmoPulse
+event HudLowAmmoPulseLoop
+{
+	RunEvent HudLowAmmoPulse 0.0
+}
+
+event HudLowAmmoPulseStop
+{
+	StopEvent HudLowAmmoPulse 0.0
+	StopEvent HudLowAmmoPulseLoop 0.0
+	
+	Animate	  AmmoInClip		FgColor		"Ammo In Clip"			Accel 0.0 0.0
+	
+	Animate	  AmmoInReserve		FgColor		"Ammo In Reserve"		Accel 0.0 0.0
+
+	Animate	  AmmoNoClip		FgColor		"Ammo In Clip"			Accel 0.0 0.0
+}
+
+//===========================================
+
+// Flash the medic charge hud when we have full charge
+
+event HudMedicCharged
+{
+	Animate	ChargeLabel 	FgColor		"TanLight"		Linear 0.0 0.1
+	Animate	ChargeLabel 	FgColor		"TanDarker"		Linear 0.3 0.4
+	
+	Animate CrosshairUber		tall		40			Linear 0.0 0.2
+	
+	Animate	ChargeMeter 	FgColor		"TanLight"		Linear 0.0 0.1
+	Animate	ChargeMeter 	FgColor		"TanDarker"		Linear 0.3 0.4
+
+	RunEvent HudMedicChargedLoop	0.6
+}
+
+// call to loop HudHealthBonusPulse
+event HudMedicChargedLoop
+{
+	RunEvent HudMedicCharged 0.0
+}
+
+event HudMedicChargedStop
+{
+	StopEvent HudMedicCharged 0.0
+	StopEvent HudMedicChargedLoop 0.0
+	
+	Animate CrosshairUber tall 0 Linear 0.0 0.00001
+	
+	Animate	ChargeLabel 	FgColor		"TanLight"		Linear 0.0 0.0001
+	Animate	ChargeMeter 	FgColor		"TanLight"		Linear 0.0 0.0001
+}
+
+//===========================================
+
+event ControlPointIconShrink
+{
+	Animate HudControlPointIcons icon_expand "0" Linear 0.0 0.2
+}
+
+event ControlPointIconGrow
+{
+	Animate HudControlPointIcons icon_expand "4" Linear 0.0 0.2
+}
+
+// Metal Account
+
+//activecolor - instantly turn red, fade back to yellow
+event AccountMoneyRemoved
+{
+	Animate HudAccount		FgColor	"HudIcon_Red" Linear 0.0 0.0001
+	Animate HudAccount		FgColor	"OrangeDim" Accel 0.0 3.0
+
+	Animate	HudAccount		Ammo2Color "HudIcon_Red" Linear 0.0 0.0001
+	Animate HudAccount		Ammo2Color "0 0 0 0" Accel 0.0 3.0
+}
+
+//activecolor - instantly turn green, fade back to yellow
+event AccountMoneyAdded
+{
+	Animate HudAccount		FgColor	"HudIcon_Green" Linear 0.0 0.0001
+	Animate HudAccount		FgColor	"OrangeDim" Accel 0.0 3.0
+
+	Animate HudAccount		Ammo2Color "HudIcon_Green" Accel 0.0 0.0001
+	Animate HudAccount		Ammo2Color "0 0 0 0" Accel 0.0 3.0
+}
+
+event AccountMoneyInvisible
+{
+	Animate HudAccount		FgColor	"OrangeDim" Accel 0.0 0.0001
+	Animate HudAccount		Ammo2Color "0 0 0 0" Accel 0.0 0.0001
+}
+
+//===========================================
+
+event FlagOutlineHide
+{
+	Animate OutlineImage	Alpha		"0"				Linear 0.0 0.1
+}
+
+// Local player flag pickup/drop
+event FlagOutline
+{
+	RunEvent FlagOutlineHide 0.0
+	Animate OutlineImage	Alpha		"255"			Linear 0.1 0.2
+	
+	Animate OutlineImage	Position	"c-200 140"		Linear 0.1 0.2
+	Animate OutlineImage	Size		"400 200"		Linear 0.1 0.2
+
+	Animate OutlineImage	Position	"c-50 r137"		Linear 0.7 0.2	[$WIN32]
+	Animate OutlineImage	Position	"c-50 r158"		Linear 0.7 0.2	[$X360]
+	Animate OutlineImage	Size		"100 50"		Linear 0.7 0.2
+	
+	Animate OutlineImage	Alpha		"0"				Linear 0.9 0.1
+}
+
+//===========================================
+
+// Spy Disguise
+event HudSpyDisguiseChanged
+{
+	Animate PlayerStatusSpyOutlineImage		Alpha		"255"			Linear 0.0 0.2
+	
+	Animate PlayerStatusSpyOutlineImage		Position	"c-200 c-200"	Linear 0.0 0.2
+	Animate PlayerStatusSpyOutlineImage		Size		"400 400"		Linear 0.0 0.2
+
+	RunEvent HudSpyDisguiseHide	0.7
+}
+
+event HudSpyDisguiseHide
+{
+	Animate PlayerStatusSpyOutlineImage		Position	"3 413"			Linear 0.0 0.2
+	Animate PlayerStatusSpyOutlineImage		Size		"55 55"			Linear 0.0 0.2
+	
+	Animate PlayerStatusSpyOutlineImage		Alpha		"0"				Linear 0.2 0.1
+}
+
+event HudSpyDisguiseFadeIn
+{
+	RunEvent HudSpyDisguiseChanged	0
+	Animate PlayerStatusSpyImage			Alpha		"255"			Linear 0.9 0.1	
+}
+
+event HudSpyDisguiseFadeOut
+{
+	RunEvent HudSpyDisguiseChanged	0
+	Animate PlayerStatusSpyImage			Alpha		"0"				Linear 0.9 0.1	
+}
+
+//===========================================
+
+// Show the Overtime panel
+event OvertimeShow
+{
+	Animate OvertimeLabel				Alpha		"255"			Linear 0.0 0.1	
+	Animate OvertimeBG					Alpha		"255"			Linear 0.0 0.1	
+}
+
+
+event HudSnapShotReminderIn
+{
+	Animate ScreenshotPanel		Position	"c-83 -50"	Linear 0.0 0.001
+	Animate ScreenshotPanel		Position	"c-83 13"	Spline 0.001 0.2
+}
+
+event HudReplayReminderIn	// Places the replay reminder in the same place as the snapshot reminder
+{
+	Animate ReplayReminder		Position	"c-83 -50"	Linear 0.0 0.001
+	Animate ReplayReminder		Position	"c-83 13"	Spline 0.001 0.2
+}
+
+event HudReplayReminderIn2	// Puts the panel below the snapshot panel
+{
+	Animate ReplayReminder		Position	"c-83 -50"	Linear 0.0 0.001
+	Animate ReplayReminder		Position	"c-83 53"	Spline 0.001 0.2
+}
+
+event HudReplayTipIn
+{
+	Animate ReplayTip			Position	"10 -100"	Linear 0.0 0.001
+	Animate ReplayTip			Position	"10 6"		Spline 0.001 0.1
+}
+
+event HudReplayTipOut
+{
+	Animate ReplayTip			Position	"10 6"		Linear 0.0 0.001
+	Animate ReplayTip			Position	"10 -100"	Spline 0.001 0.1
+}
+
+event HudTournamentSetupPanelOpen
+{
+	Animate HudTournamentSetup	Position	"c-90 -70"	Linear 0.0 0.001
+	Animate HudTournamentSetup	Position	"c-90 70"	Spline 0.001 0.2
+}
+
+event HudTournamentSetupPanelClose
+{
+	Animate HudTournamentSetup	Position	"c-90 70"	Linear 0.0 0.001
+	Animate HudTournamentSetup	Position	"c-90 -70"	Spline 0.001 0.2
+}
+
+event WinPanel_CompPos
+{
+	Animate WinPanel ypos 260 Linear 0 0
+}
+
+event WinPanel_NormalPos
+{
+	Animate WinPanel ypos 260 Linear 0 0
+}
