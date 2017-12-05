@@ -1,38 +1,11 @@
 "GameMenu" [$WIN32]
 {
-
-	"VersionNumber"
+	"ServerBrowserButton"
 	{
-		"label" "rayshud v3.98" 
-		"subimage" ""
-		"OnlyAtMenu" "0"
-	}
-	"FindAGameButton"
-	{
-		"label" "Play" 
-		"command" "toggle_play_menu"
+		"label" "Servers"
+		"command" "OpenServerBrowser"
 		"subimage" ""
 	}
-	"ReplayBrowserButton"
-	{
-		"label" "Replays"
-		"command" "engine replay_reloadbrowser"
-		"subimage" ""
-	}
-	"SteamWorkshopButton"
-	{
-		"label" "#MMenu_SteamWorkshop"
-		"command" "engine OpenSteamWorkshopDialog"
-		"subimage" ""
-	}
-	"TrainingButton"
-	{
-		"label" "Training"
-		"command" "offlinepractice"
-		"subimage" ""
-	}
-	
-	// These buttons get positioned by the MainMenuOverride.res	
 	"CreateServerButton"
 	{
 		"label" "Create"
@@ -52,9 +25,20 @@
 		"command" "engine open_charinfo"
 		"subimage" ""
 	}
-
-	// These buttons are only shown while in-game
-	// and also are positioned by the .res file
+	"ReplayBrowserButton"
+	{
+		"label" "Replays"
+		"command" "engine replay_reloadbrowser"
+		"subimage" ""
+	}
+	"SteamWorkshopButton"
+	{
+		"label" "#MMenu_SteamWorkshop"
+		"command" "engine OpenSteamWorkshopDialog"
+		"subimage" ""
+	}
+	
+	
 	"CallVoteButton"
 	{
 		"label"			""
