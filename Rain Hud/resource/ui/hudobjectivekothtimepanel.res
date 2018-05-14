@@ -28,6 +28,12 @@
 		"delta_lifetime"		"1.5"
 		"delta_item_font"		"HudFontMedium"
 		
+		if_match
+		{
+			"xpos"				"12"
+			"ypos"				"-56"
+		}
+		
 		"TimePanelValue"
 		{
 			"ControlName"	"CExLabel"
@@ -46,7 +52,7 @@
 			
 			if_match
 			{
-				"ypos"			"68"
+				"font"		"Roboto12"
 			}
 		}	
 	}
@@ -94,6 +100,12 @@
 		"delta_lifetime"	"1.5"
 		"delta_item_font"	"HudFontMedium"
 		
+		if_match
+		{
+			"xpos"				"48"
+			"ypos"				"-56"
+		}
+		
 		"TimePanelValue"
 		{
 			"ControlName"	"CExLabel"
@@ -112,7 +124,7 @@
 			
 			if_match
 			{
-				"ypos"		"68"
+				"font"	"roboto12"
 			}
 		}	
 	}

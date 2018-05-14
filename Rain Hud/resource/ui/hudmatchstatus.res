@@ -273,7 +273,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"			"ObjectiveStatusTimePanel"
 		"xpos"				"c-50"
-		"ypos"				"0"	[$WIN32]
+		"ypos"				"0"
 		"zpos"				"4"
 		"wide"				"200"
 		"tall"				"150"
@@ -289,7 +289,6 @@
 		if_match
 		{
 			"ypos"				"7"
-			"delta_item_x"		"63"
 		}
 		
 		"TimePanelValue"
@@ -305,12 +304,12 @@
 			"tall"			"31"
 			"visible"		"1"
 			"enabled"		"1"
-			"textAlignment"		"center"
+			"textAlignment"	"center"
 			"labelText"		"0:00"
 			
 			if_match
 			{
-				"font"			"Roboto16"
+				"font"		"Roboto16"
 			}
 		}	
 	}
