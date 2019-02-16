@@ -123,86 +123,42 @@
 	}	
 	"mouseoveritempanel"
 	{
-			"ControlName" "CItemModelPanel"
-			"fieldName" "mouseoveritempanel"
-			"xpos" "c-70"
-			"ypos" "270"
-			"zpos" "100"
-			"wide" "300"
-			"tall" "300"
-			"visible" "0"
-			"bgcolor_override" "0 0 0 0"
-			"noitem_textcolor" "117 107 94 255"
-			"PaintBackgroundType" "2"
-			"paintborder" "1"
-			"border" "MainMenuBGBorder"
+		"ControlName" "CItemModelPanel"
+		"fieldName" "mouseoveritempanel"
+		"xpos" "c-70"
+		"ypos" "270"
+		"zpos" "100"
+		"wide" "300"
+		"tall" "300"
+		"visible" "0"
+		"bgcolor_override" "0 0 0 0"
+		"noitem_textcolor" "117 107 94 255"
+		"PaintBackgroundType" "2"
+		"paintborder" "1"
+		"border" "MainMenuBGBorder"
 	
-			"text_ypos" "20"
-			"text_center" "1"
-			"model_hide" "1"
-			"resize_to_text" "1"
-			"padding_height" "15"
+		"text_ypos" "20"
+		"text_center" "1"
+		"model_hide" "1"
+		"resize_to_text" "1"
+		"padding_height" "15"
 	
-			"attriblabel"
-			{
-				"font" "ItemFontAttribLarge"
-				"xpos" "0"
-				"ypos" "30"
-				"zpos" "2"
-				"wide" "140"
-				"tall" "60"
-				"autoResize" "0"
-				"pinCorner" "0"
-				"visible" "1"
-				"enabled" "1"
-				"labelText" "%attriblist%"
-				"textAlignment" "center"
-				"fgcolor" "117 107 94 255"
-				"centerwrap" "1"
-		}
-	}
-	
-	"Background"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"Background"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"-200"
-		"wide"			"f0"
-		"tall"			"480"
-		"visible"		"0"
-		"enabled"		"1"
-		"image"			""
-		"scaleImage"	"1"
-		
-		if_halloween_0
+		"attriblabel"
 		{
-				"image" "../console/title_team_halloween2011"
-		}
-		if_halloween_1
-		{
-				"image" "../console/title_team_halloween2012"
-		}
-		if_halloween_2
-		{
-				"image" "../console/title_team_halloween2013"
-		}
-		if_halloween_3
-		{
-				"image" "../console/title_team_halloween2014"
-		}
-		if_fullmoon
-		{
-				"image" "../console/title_fullmoon"
-		}
-		if_christmas
-		{
-				"image" "../console/background_xmas2011"
-		}
-		if_eotl_launch
-		{
-				"image" "../console/title_eotl01"
+			"font" "ItemFontAttribLarge"
+			"xpos" "0"
+			"ypos" "30"
+			"zpos" "2"
+			"wide" "140"
+			"tall" "60"
+			"autoResize" "0"
+			"pinCorner" "0"
+			"visible" "1"
+			"enabled" "1"
+			"labelText" "%attriblist%"
+			"textAlignment" "center"
+			"fgcolor" "117 107 94 255"
+			"centerwrap" "1"
 		}
 	}
 	
@@ -1203,23 +1159,6 @@
 		}		
 	}
 
-	"RankTooltipPanel"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"RankTooltipPanel"
-		"xpos"			"c-285"
-		"ypos"			"99"
-		"zpos"			"-1"
-		"wide"			"8"
-		"tall"			"0"	//8
-		"visible"		"1"
-		"proportionaltoparent"	"1"
-		"mouseinputenabled"	"1"
-		"image"			"info"
-		"scaleImage"	"1"	
-		"alpha"			"75"
-	}
-	
 	"RankPanel"
 	{
 		"ControlName"	"CPvPRankPanel"
@@ -1239,13 +1178,6 @@
 		"show_type"		"1"
 	}
 
-	"RankBorder"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"RankBorder"
-		"xpos"			"9999"
-	}
-	
 	"ServerBrowserButton"
 	{
 		"ControlName"	"EditablePanel"
@@ -2176,7 +2108,7 @@
 		"fieldName"		"DisconnectButton"
 		"xpos"			"50"
 		"ypos"			"416"
-		"zpos"			"1"
+		"zpos"			"15"
 		"wide"			"150"
 		"tall"			"16"
 		"autoResize"	"0"
@@ -2228,7 +2160,7 @@
 		"fieldname"		"CallVoteButton"
 		"xpos"			"200"
 		"ypos"			"180"
-		"zpos"			"12"
+		"zpos"			"20"
 		"wide"			"20"
 		"tall"			"20"
 		"visible"		"1"
@@ -2290,7 +2222,7 @@
 		"fieldname"		"MutePlayersButton"
 		"xpos"			"220"
 		"ypos"			"180"
-		"zpos"			"12"
+		"zpos"			"20"
 		"wide"			"20"
 		"tall"			"20"
 		"visible"		"1"
@@ -2352,7 +2284,7 @@
 		"fieldname"		"RequestCoachButton"
 		"xpos"			"240"
 		"ypos"			"180"
-		"zpos"			"12"
+		"zpos"			"20"
 		"wide"			"20"
 		"tall"			"20"
 		"visible"		"1"
@@ -2533,197 +2465,6 @@
 			"bgcolor_override"	"25 25 25 220"
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	"BackgroundFooter"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"BackgroundFooter"
-		"xpos"			"9999"
-		"ypos"			"9999"
-		"zpos"			"-50"
-		"wide"			"f0"
-		"tall"			"60"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"loadout_bottom_gradient"
-		"tileImage"		"1"
-	}				
-	"FooterLine"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"FooterLine"
-		"xpos"			"9999"
-		"ypos"			"9999"
-		"zpos"			"-5-"
-		"wide"			"f0"
-		"tall"			"10"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"loadout_solid_line"
-		"scaleImage"	"1"
-	}
-	"TFCharacterImage"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"TFCharacterImage"
-		"xpos"			"9999"
-		"ypos"			"9999"
-		"zpos"			"-99"
-		"wide"			"600"
-		"tall"			"600"
-		"visible"		"1"
-		"enabled"		"1"
-		"scaleImage"	"1"
-	}
-	
 	"TooltipPanel"
 	{
 		"ControlName"	"EditablePanel"
@@ -2731,224 +2472,13 @@
 		"xpos"			"9999"
 		"ypos"			"9999"
 		"zpos"			"1"
-		"wide"			"150"
-		"tall"			"50"
-		"visible"		"0"
-		"PaintBackgroundType"	"2"
-		"border"		"MainMenuBGBorder"
-		
-		"TipSubLabel"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"TipSubLabel"
-			"font"			"HudFontSmall"
-			"labelText"		"%tipsubtext%"
-			"textAlignment"	"center"
-			"xpos"			"20"
-			"ypos"			"30"
-			"zpos"			"2"
-			"wide"			"250"
-			"tall"			"50"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"fgcolor_override"	"117 107 94 255"
-			"wrap"			"1"
-		}
-		
-		"TipLabel"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"TipLabel"
-			"font"			"HudFontSmallBold"
-			"labelText"		"%tiptext%"
-			"textAlignment"	"center"
-			"xpos"			"20"
-			"ypos"			"5"
-			"zpos"			"2"
-			"wide"			"140"
-			"tall"			"30"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"fgcolor_override"	"235 226 202 255"
-			"auto_wide_tocontents" "1"
-		}
-	}
-	
-	"StoreBGPanel"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"StoreBGPanel"
-		"xpos"			"9999"
-		"ypos"			"9999"
-		"zpos"			"-1"
-		"wide"			"260"
-		"tall"			"60"
-		"visible"		"1"
-		"PaintBackgroundType"	"2"
-		"border"		""
-	}
-	"CustomizeLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"CustomizeLabel"
-		"font"			"HudFontSmallBold"
-		"labelText"		"#MMenu_Customize"
-		"textAlignment"	"west"
-		"xpos"			"c-278"
-		"ypos"			"226"
-		"wide"			"140"
-		"tall"			"30"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"fgcolor_override"	"235 227 203 255"
-	}
-
-	"CreateBGPanel"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"CreateBGPanel"
-		"xpos"			"9999"
-		"ypos"			"9999"
-		"zpos"			"-1"
-		"wide"			"260"
-		"tall"			"60"
-		"visible"		"1"
-		"PaintBackgroundType"	"2"
-		"border"		"MainMenuBGBorder"
-	}
-	"CreateLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"CreateLabel"
-		"font"			"HudFontSmallBold"
-		"labelText"		"#MMenu_Create"
-		"textAlignment"	"west"
-		"xpos"			"c-278"
-		"ypos"			"298"
 		"wide"			"0"
 		"tall"			"0"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"fgcolor_override"	"235 227 203 255"
 	}
-	
-	"ShowPromoCodesButton"
+	"Background"
 	{
-		"ControlName"	"CExImageButton"
-		"fieldName"		"ShowPromoCodesButton"
+		"ControlName"	"ImagePanel"
+		"fieldName"		"Background"
 		"xpos"			"9999"
-		"ypos"			"9999"
-		"wide"			"250"
-		"tall"			"20"
-		"autoResize"	"0"
-		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"font"			"HudFontSmallestBold"
-		"labelText"		"#MMenu_ShowPromoCodes"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
-		"command"		"showpromocodes"
-		
-		"border_default"	"MainMenuButtonDefault"
-		"border_armed"		"MainMenuButtonArmed"
-		"paintbackground"	"0"
-		
-		"defaultFgColor_override" "46 43 42 255"
-		"armedFgColor_override" "235 226 202 255"
-		"depressedFgColor_override" "46 43 42 255"
-	}
-	"FreeTrialPanel"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"FreeTrialPanel"
-		"xpos"			"c-300"
-		"ypos"			"310"
-		"zpos"			"0"
-		"wide"			"250"
-		"tall"			"130"
-		"visible"		"0"
-
-		"Image"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"Image"
-			"xpos"			"0"
-			"ypos"			"0"
-			"zpos"			"0"
-			"wide"			"80"
-			"tall"			"80"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"tf_box"
-			"scaleImage"	"1"
-		}
-
-		"UpgradeLabel1"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"UpgradeLabel"
-			"font"			"HudFontSmallestBold"
-			"labelText"		"#TF_Trial_MainMenu_Upgrade1"
-			"textAlignment"	"north"
-			"xpos"			"80"
-			"ypos"			"5"
-			"wide"			"165"
-			"tall"			"80"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"wrap"			"1"
-		}
-		"UpgradeLabel2"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"UpgradeLabel2"
-			"font"			"HudFontSmallBold"
-			"labelText"		"#TF_Trial_MainMenu_Upgrade2"
-			"textAlignment"	"north"
-			"xpos"			"80"
-			"ypos"			"18"
-			"wide"			"165"
-			"tall"			"80"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"wrap"			"1"
-			"fgcolor"		"255 155 138 255"
-		}
-		"UpgradeLabel3"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"UpgradeLabel3"
-			"font"			"HudFontSmallestBold"
-			"labelText"		"#TF_Trial_MainMenu_Upgrade3"
-			"textAlignment"	"north"
-			"xpos"			"80"
-			"ypos"			"48"
-			"wide"			"165"
-			"tall"			"80"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"wrap"			"1"
-			"fgcolor"		"137 134 127 255"
-		}
 	}
 }
