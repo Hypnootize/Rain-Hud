@@ -426,7 +426,7 @@
 		
 		if_mvm
 		{
-			"ypos"			"68"
+			"visible"		"0"
 		}
 	}
 	"ServerTimeLeft"
@@ -450,7 +450,7 @@
 		
 		if_mvm
 		{
-			"ypos"			"80"
+			"visible"		"0"
 		}
 	}							
 	"BluePlayerList"
@@ -601,7 +601,7 @@
 		
 		if_mvm
 		{
-			"visible"		"1"
+			"visible"		"0"
 		}
 	}
 	"ClassImage"	
@@ -620,7 +620,7 @@
 		
 		if_mvm
 		{
-			"visible"		"1"
+			"visible"		"0"
 		}
 	}
 	"PlayerNameLabel"
@@ -643,7 +643,7 @@
 		
 		if_mvm
 		{
-			"visible"		"1"
+			"visible"		"0"
 		}
 	}							
 	"HorizontalLine"
@@ -668,7 +668,7 @@
 		
 		if_mvm
 		{
-			"visible"		"1"
+			"visible"		"0"
 		}
 	}
 	"PlayerScoreLabel"
@@ -712,6 +712,11 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"fgcolor"		"236 227 203 255"
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}	
 
 	"LocalPlayerDuelStatsPanel"
@@ -941,7 +946,7 @@
 		
 		if_mvm
 		{
-			"visible"		"1"
+			"wide"		"0"
 		}
 
 		"Label"
